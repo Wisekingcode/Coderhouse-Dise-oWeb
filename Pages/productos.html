@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra de Navegación con Dropdown</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/Css +/bootstrap.min.css">
+  <style>
+    /* Personalización adicional */
+    .navbar-custom {
+      background-color: #2165a9; /* Color oscuro */
+    }
+    .navbar-custom .nav-link {
+      color: #f8f9fa; /* Color claro para enlaces */
+    }
+    .navbar-custom .nav-link:hover {
+      color: #17a2b8; /* Color de hover */
+    }
+    .navbar-custom .navbar-brand {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .navbar-custom .navbar-brand:hover {
+      color: #17a2b8;
+    }
+    .dropdown-menu {
+      background-color: #343a40; /* Fondo del menú desplegable */
+      border: none; /* Sin bordes */
+    }
+    .dropdown-item {
+      color: #f8f9fa;
+    }
+    .dropdown-item:hover {
+      background-color: #17a2b8;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="../Index.html">Mi Sitio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../Index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/productos.html">Productos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="NosotrosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nosotros
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="NosotrosDropdown">
+              <li><a class="dropdown-item" href="../Pages/nosotros.html">Nosotros</a></li>
+              <li><a class="dropdown-item" href="../Pages/contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="../Pages/ayuda.html">Ayuda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary text-white px-3" href="../Pages/carrito.html">Carrito</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido de ejemplo -->
+  <div class="container mt-5">
+    <h1>Productos</h1>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="../css/js/bootstrap.bundle.min.js"></script>
+
+  <main>
+    <h1>Igadget</h1>
+    <section>
+        <img src="../assets/Img/storing.jpg" alt="Bodega de productos">
+        <h2>Imagenes de categorias de productos (destacados)</h2>
+        <p>Textos sobre imagenes, como descuentos en % y tipo de productos</p>
+    </section>
+    <article>
+        <h2>Productos más vendidos</h2>
+        <p>Descripción y precio de dichos productos</p>
+    </article>
+</main>
+<!-- Footer -->
+<footer class="bg-dark text-center text-white py-3 mt-5">
+    © 2024 Igadget store
+  </footer>
+  
+</body>
+</html>
